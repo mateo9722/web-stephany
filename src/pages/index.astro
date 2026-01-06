@@ -1,72 +1,46 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/ui/Section.astro";
-import Container from "../components/ui/Container.astro";
+import Header from "../Header.astro";
 ---
 
-<BaseLayout title="Tefita | Psicología">
+<BaseLayout
+        title="Psicóloga clínica | Psicoterapia para adolescentes y adultos"
+        description="Acompañamiento psicológico con una mirada humana. Atención online y presencial."
+>
+    <Header />
+
     <!-- HERO -->
-    <Section>
-        <Container>
-            <h1>Acompañamiento psicológico con una mirada humana</h1>
-            <p>
-                Un espacio de escucha y cuidado, pensado para acompañarte en tu proceso.
-            </p>
-        </Container>
-    </Section>
+    <section class="bg-stone-50">
+        <div class="mx-auto max-w-6xl px-6 lg:px-8 min-h-[85vh] grid lg:grid-cols-2 items-center gap-20">
 
-    <!-- SOBRE MÍ -->
-    <Section variant="soft">
-        <Container>
-            <h2>Sobre mí</h2>
-            <p>
-                Soy Tefita, psicóloga clínica. Acompaño procesos terapéuticos desde una
-                mirada cercana, respetuosa y personalizada.
-            </p>
-        </Container>
-    </Section>
+            <!-- TEXTO -->
+            <div class="max-w-xl">
+        <span class="uppercase tracking-[0.25em] text-xs text-stone-500 mb-8 block">
+          Psicología clínica
+        </span>
 
-    <!-- SERVICIOS -->
-    <Section>
-        <Container>
-            <h2>¿Cómo puedo ayudarte?</h2>
-            <p>
-                Psicoterapia para adolescentes, adultos y orientación profesional.
-            </p>
-        </Container>
-    </Section>
+                <h1 class="font-title text-4xl lg:text-5xl leading-tight text-stone-900 mb-8">
+                    Acompañamiento psicológico<br />
+                    con una mirada humana
+                </h1>
 
-    <!-- MODALIDADES -->
-    <Section variant="soft">
-        <Container>
-            <h2>Modalidades de atención</h2>
-            <p>Sesiones online y presenciales.</p>
-        </Container>
-    </Section>
+                <p class="text-lg text-stone-600">
+                    Psicoterapia para adolescentes y adultos. Un espacio de escucha y cuidado,
+                    pensado para acompañarte en tu proceso.
+                </p>
+            </div>
 
-    <!-- TESTIMONIOS -->
-    <Section>
-        <Container>
-            <h2>Testimonios</h2>
-            <p>Lo que dicen quienes ya han iniciado su proceso.</p>
-        </Container>
-    </Section>
+            <!-- IMAGEN -->
+            <div class="flex justify-center lg:justify-end">
+                <img
+                        src="/psic.jpeg"
+                        alt="Psicóloga clínica"
+                        class="w-[400px] h-[560px] object-cover shadow-xl"
+                        style="border-radius: 42% 58% 55% 45% / 45% 45% 55% 55%;"
+                />
+            </div>
 
-    <!-- CTA -->
-    <Section variant="soft">
-        <Container>
-            <h2>Agenda tu sesión</h2>
-            <p>
-                Si sentís que este puede ser un espacio para vos, podemos coordinar una
-                primera entrevista.
-            </p>
-        </Container>
-    </Section>
+        </div>
+    </section>
 
-    <!-- FAQ -->
-    <Section>
-        <Container>
-            <h2>Preguntas frecuentes</h2>
-        </Container>
-    </Section>
 </BaseLayout>
