@@ -1,3 +1,7 @@
+/* =========================
+   RESET / BASE
+========================= */
+
 *,
 *::before,
 *::after {
@@ -11,26 +15,55 @@ body {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: #111;
-    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
+
+/* =========================
+   DESIGN TOKENS
+========================= */
+
 :root {
-    --color-bg-main: #ebe6db;
-    --color-bg-soft: #bdab9c;
-    --color-primary: #697962;
-    --color-accent: #ae6f7d;
+    /* =========================
+       COLORES
+    ========================= */
+
+    /* Fondos que PRIMAN */
+    --color-bg-main: #e4c9b6;   /* NUDE */
+    --color-bg-soft: #d7a49a;   /* DUSTY ROSE */
+
+    /* Acento (detalles, botones, animaciones) */
+    --color-accent: #697962;    /* SAGE / VERDE */
+
+    /* Texto */
     --color-text: #454545;
+    --color-text-light: #ffffff;
+
+    /* =========================
+       RADIOS
+    ========================= */
 
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 32px;
 
-    --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
-    --font-title: "Playfair Display", serif;
-    --font-body: "Inter", system-ui, sans-serif;
+    /* =========================
+       SOMBRAS
+    ========================= */
 
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    /* =========================
+       TIPOGRAFÍA
+    ========================= */
+
+    --font-title: "Playfair Display", serif;
+    --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* =========================
+       ESCALA DE TEXTO
+    ========================= */
 
     --text-xs: 0.875rem;
     --text-sm: 1rem;
@@ -38,8 +71,12 @@ body {
     --text-lg: 1.5rem;
     --text-xl: 2.25rem;
     --text-2xl: 3rem;
-
 }
+
+/* =========================
+   BODY
+========================= */
+
 body {
     font-family: var(--font-body);
     font-size: var(--text-sm);
@@ -47,29 +84,91 @@ body {
     background-color: var(--color-bg-main);
 }
 
+/* =========================
+   TIPOGRAFÍA
+========================= */
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var(--font-title);
     font-weight: 500;
+    margin: 0 0 1rem 0;
 }
+
 h1 {
     font-size: var(--text-2xl);
-    margin-bottom: 1.5rem;
 }
 
 h2 {
     font-size: var(--text-xl);
-    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: var(--text-lg);
 }
 
 p {
     font-size: var(--text-md);
+    margin: 0;
     max-width: 60ch;
 }
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   BOTONES (ACENTO VERDE)
+========================= */
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   CTA
+========================= */
+
 .cta {
-    background-color: var(--color-primary);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
     padding: 3rem;
     border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   UTILIDADES SUAVES
+========================= */
+
+.text-light {
+    color: var(--color-text-light);
+}
+
+.center {
+    text-align: center;
 }
