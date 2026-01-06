@@ -1,11 +1,72 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/ui/Section.astro";
+import Container from "../components/ui/Container.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Tefita | Psicología">
+    <!-- HERO -->
+    <Section>
+        <Container>
+            <h1>Acompañamiento psicológico con una mirada humana</h1>
+            <p>
+                Un espacio de escucha y cuidado, pensado para acompañarte en tu proceso.
+            </p>
+        </Container>
+    </Section>
+
+    <!-- SOBRE MÍ -->
+    <Section variant="soft">
+        <Container>
+            <h2>Sobre mí</h2>
+            <p>
+                Soy Tefita, psicóloga clínica. Acompaño procesos terapéuticos desde una
+                mirada cercana, respetuosa y personalizada.
+            </p>
+        </Container>
+    </Section>
+
+    <!-- SERVICIOS -->
+    <Section>
+        <Container>
+            <h2>¿Cómo puedo ayudarte?</h2>
+            <p>
+                Psicoterapia para adolescentes, adultos y orientación profesional.
+            </p>
+        </Container>
+    </Section>
+
+    <!-- MODALIDADES -->
+    <Section variant="soft">
+        <Container>
+            <h2>Modalidades de atención</h2>
+            <p>Sesiones online y presenciales.</p>
+        </Container>
+    </Section>
+
+    <!-- TESTIMONIOS -->
+    <Section>
+        <Container>
+            <h2>Testimonios</h2>
+            <p>Lo que dicen quienes ya han iniciado su proceso.</p>
+        </Container>
+    </Section>
+
+    <!-- CTA -->
+    <Section variant="soft">
+        <Container>
+            <h2>Agenda tu sesión</h2>
+            <p>
+                Si sentís que este puede ser un espacio para vos, podemos coordinar una
+                primera entrevista.
+            </p>
+        </Container>
+    </Section>
+
+    <!-- FAQ -->
+    <Section>
+        <Container>
+            <h2>Preguntas frecuentes</h2>
+        </Container>
+    </Section>
+</BaseLayout>
