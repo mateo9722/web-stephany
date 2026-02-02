@@ -1,0 +1,28 @@
+---
+import Container from "@/components/ui/Container.astro";
+import Button from "@/components/ui/Button.astro";
+---
+
+<section class="bg-rose py-20 lg:py-24">
+    <Container>
+        <div class="max-w-3xl mx-auto text-center space-y-8">
+            <h2 class="text-3xl lg:text-4xl font-serif text-charcoal">
+                ¿Lista para dar el primer paso?
+            </h2>
+            <p class="text-lg text-charcoal/70 leading-relaxed">
+                Reconozco que buscar apoyo es un acto valiente. Ya sea que estés
+                lista para agendar una consulta de 15 minutos o simplemente
+                quieras aprender más sobre cómo podemos trabajar juntas, estoy
+                aquí para ayudarte.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Button href="/contact" variant="primary">
+                    AGENDAR UNA CONVERSACIÓN
+                </Button>
+                <Button href="/about" variant="outline">
+                    EXPLORAR MI TRABAJO
+                </Button>
+            </div>
+        </div>
+    </Container>
+</section>
