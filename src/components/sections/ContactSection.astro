@@ -1,0 +1,213 @@
+---
+import Container from "@/components/ui/Container.astro";
+import Card from "@/components/ui/Card.astro";
+import Input from "@/components/ui/Input.astro";
+import Button from "@/components/ui/Button.astro";
+---
+
+<section class="bg-nude py-20">
+    <Container>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Left Column - Contact Info -->
+            <div>
+                <h2 class="font-title text-3xl md:text-4xl text-charcoal mb-6">
+                    Encontremos el camino juntos.
+                </h2>
+                <p class="text-charcoal/70 mb-8">
+                    Dar el primer paso puede ser difícil. Si estás listo para
+                    explorar tu historia en un espacio seguro y profesional,
+                    estoy aquí para ayudarte a alcanzarla.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- Email -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center"
+                        >
+                            <svg
+                                class="w-5 h-5 text-sage"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p
+                                class="text-xs uppercase tracking-wider text-sage mb-1"
+                            >
+                                Email
+                            </p>
+                            <p class="text-charcoal font-medium">
+                                hello@drthorne.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Office Location -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center"
+                        >
+                            <svg
+                                class="w-5 h-5 text-sage"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p
+                                class="text-xs uppercase tracking-wider text-sage mb-1"
+                            >
+                                Ubicación de la Oficina
+                            </p>
+                            <p class="text-charcoal font-medium">
+                                123 Wellness Way, Healing Suite 4<br />San
+                                Francisco, CA 94110
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center"
+                        >
+                            <svg
+                                class="w-5 h-5 text-sage"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p
+                                class="text-xs uppercase tracking-wider text-sage mb-1"
+                            >
+                                Tiempo de Respuesta
+                            </p>
+                            <p class="text-charcoal font-medium">
+                                1-2 días hábiles
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-8 p-4 bg-sage/5 rounded-card border-l-4 border-sage"
+                >
+                    <p class="text-sm text-charcoal/70 italic">
+                        "El primer paso hacia el cambio es la conciencia. El
+                        segundo paso es la aceptación." — Espero apoyar tu
+                        camino.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column - Contact Form -->
+            <div>
+                <Card variant="white" padding="lg" shadow={true}>
+                    <h3 class="font-title text-2xl text-charcoal mb-6">
+                        Un Espacio Seguro para tu Primer Paso.
+                    </h3>
+                    <p class="text-sm text-charcoal/70 mb-6">
+                        Ya sea que tengas preguntas sobre terapia o estés listo
+                        para comenzar, estoy aquí para escuchar. Tu mensaje se
+                        maneja con el máximo cuidado y confidencialidad.
+                    </p>
+
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Input
+                                type="text"
+                                name="fullName"
+                                label="Nombre Completo"
+                                placeholder="Tu nombre"
+                                required={true}
+                            />
+                            <Input
+                                type="email"
+                                name="email"
+                                label="Correo Electrónico"
+                                placeholder="tu@email.com"
+                                required={true}
+                            />
+                        </div>
+
+                        <div>
+                            <label
+                                for="inquiry"
+                                class="block text-sm font-medium text-charcoal mb-2"
+                            >
+                                Naturaleza de la Consulta
+                            </label>
+                            <select
+                                id="inquiry"
+                                name="inquiry"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-card focus:outline-none focus:ring-2 focus:ring-sage focus:border-transparent transition-all"
+                            >
+                                <option>Consulta General</option>
+                                <option>Agendar Primera Sesión</option>
+                                <option>Pregunta sobre Servicios</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <Input
+                            type="textarea"
+                            name="message"
+                            label="Mensaje"
+                            placeholder="Cuéntame un poco sobre lo que tienes en mente..."
+                            required={true}
+                        />
+
+                        <div class="flex items-start gap-2">
+                            <input
+                                type="checkbox"
+                                id="understand"
+                                class="mt-1"
+                                required
+                            />
+                            <label
+                                for="understand"
+                                class="text-xs text-charcoal/70"
+                            >
+                                Entiendo que este formulario es para contacto
+                                inicial y no es para servicios de emergencia.
+                            </label>
+                        </div>
+
+                        <Button variant="primary" size="lg" class="w-full">
+                            Comenzar la Conversación
+                        </Button>
+
+                        <div
+                            class="flex items-center justify-center gap-2 text-xs text-charcoal/60"
+                        >
+                            <svg
+                                class="w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
+                                ></path>
+                            </svg>
+                            <span>Encriptado y Confidencial</span>
+                        </div>
+                    </form>
+                </Card>
+            </div>
+        </div>
+    </Container>
+</section>

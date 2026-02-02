@@ -1,0 +1,178 @@
+---
+import Container from "@/components/ui/Container.astro";
+import Card from "@/components/ui/Card.astro";
+import Button from "@/components/ui/Button.astro";
+---
+
+<section class="bg-rose py-20">
+    <Container>
+        <div class="text-center mb-12">
+            <h2 class="font-title text-3xl md:text-4xl text-charcoal mb-4">
+                Reflexiones
+            </h2>
+            <p class="text-charcoal/70 max-w-2xl mx-auto">
+                Un espacio para el cuidado, la perspectiva y el empoderamiento
+                psicológico. El blog como un viaje a través de los momentos
+                silenciosos de crecimiento.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- Blog Card 1 -->
+            <Card variant="white" padding="sm" shadow={true}>
+                <div
+                    class="aspect-video bg-gray-200 rounded-card mb-4 overflow-hidden"
+                >
+                    <img
+                        src="/images/uploaded_media_4_1770053908927.png"
+                        alt="Blog post"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+                <div class="p-4">
+                    <p class="text-xs uppercase tracking-wider text-sage mb-2">
+                        Mindfulness • 5 min
+                    </p>
+                    <h3 class="font-semibold text-lg text-charcoal mb-2">
+                        La Arquitectura del Silencio
+                    </h3>
+                    <p class="text-sm text-charcoal/70 mb-4">
+                        Explorando el poder del silencio en nuestras vidas
+                        diarias y cómo puede transformar...
+                    </p>
+                    <a
+                        href="/blog/architecture-silence"
+                        class="text-sage hover:text-sage-dark font-medium text-sm inline-flex items-center gap-1"
+                    >
+                        Leer Más
+                        <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </Card>
+
+            <!-- Blog Card 2 -->
+            <Card variant="white" padding="sm" shadow={true}>
+                <div
+                    class="aspect-video bg-gray-200 rounded-card mb-4 overflow-hidden"
+                >
+                    <img
+                        src="/images/uploaded_media_4_1770053908927.png"
+                        alt="Blog post"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+                <div class="p-4">
+                    <p class="text-xs uppercase tracking-wider text-sage mb-2">
+                        Transición • 4 min
+                    </p>
+                    <h3 class="font-semibold text-lg text-charcoal mb-2">
+                        Encontrando Quietud en la Transición
+                    </h3>
+                    <p class="text-sm text-charcoal/70 mb-4">
+                        Cómo navegar momentos de cambio con gracia y
+                        autoaceptación...
+                    </p>
+                    <a
+                        href="/blog/stillness-transition"
+                        class="text-sage hover:text-sage-dark font-medium text-sm inline-flex items-center gap-1"
+                    >
+                        Leer Más
+                        <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </Card>
+
+            <!-- Blog Card 3 -->
+            <Card variant="white" padding="sm" shadow={true}>
+                <div
+                    class="aspect-video bg-gray-200 rounded-card mb-4 overflow-hidden"
+                >
+                    <img
+                        src="/images/uploaded_media_4_1770053908927.png"
+                        alt="Blog post"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+                <div class="p-4">
+                    <p class="text-xs uppercase tracking-wider text-sage mb-2">
+                        Cuidado • 6 min
+                    </p>
+                    <h3 class="font-semibold text-lg text-charcoal mb-2">
+                        La Ética del Cuidado
+                    </h3>
+                    <p class="text-sm text-charcoal/70 mb-4">
+                        Comprendiendo los límites éticos y la compasión en la
+                        práctica terapéutica...
+                    </p>
+                    <a
+                        href="/blog/ethics-care"
+                        class="text-sage hover:text-sage-dark font-medium text-sm inline-flex items-center gap-1"
+                    >
+                        Leer Más
+                        <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </Card>
+        </div>
+
+        <!-- Newsletter CTA -->
+        <Card
+            variant="white"
+            padding="lg"
+            shadow={true}
+            class="max-w-2xl mx-auto"
+        >
+            <div class="text-center">
+                <h3 class="font-title text-2xl text-charcoal mb-4">
+                    Únete a la Reflexión
+                </h3>
+                <p class="text-charcoal/70 mb-6">
+                    Recibe ideas reflexivas y empoderamiento psicológico
+                    directamente en tu bandeja de entrada. Sin spam, solo
+                    reflexiones significativas.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input
+                        type="email"
+                        placeholder="Tu correo electrónico"
+                        class="flex-1 px-4 py-3 border border-gray-300 rounded-card focus:outline-none focus:ring-2 focus:ring-sage focus:border-transparent"
+                    />
+                    <Button variant="primary" size="md"> Suscribirse </Button>
+                </form>
+            </div>
+        </Card>
+    </Container>
+</section>

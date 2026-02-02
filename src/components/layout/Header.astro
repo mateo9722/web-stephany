@@ -1,0 +1,59 @@
+---
+import Container from "@/components/ui/Container.astro";
+import Button from "@/components/ui/Button.astro";
+---
+
+<header
+    class="w-full border-b border-black/5 bg-nude/80 backdrop-blur-sm sticky top-0 z-50"
+>
+    <Container>
+        <div class="flex h-20 items-center justify-between">
+            <!-- Logo / Nombre -->
+            <a
+                href="/"
+                class="flex items-center gap-2 font-title text-lg tracking-wide text-charcoal hover:opacity-80 transition"
+            >
+                <svg
+                    class="w-6 h-6 text-sage"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.66-2.17c1.51.46 3.06.67 4.63.67 5.52 0 10-4.48 10-10V8h-4zm-1.99 5.42c-1.07 0-1.94-.87-1.94-1.94s.87-1.94 1.94-1.94 1.94.87 1.94 1.94-.87 1.94-1.94 1.94z"
+                    ></path>
+                </svg>
+                <span>Stephany Pesantez</span>
+            </a>
+
+            <!-- Navegación -->
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="/" class="text-charcoal hover:text-sage transition"
+                    >Inicio</a
+                >
+                <a
+                    href="/about"
+                    class="text-charcoal hover:text-sage transition">Acerca</a
+                >
+                <a
+                    href="/approach"
+                    class="text-charcoal hover:text-sage transition"
+                    >Servicios</a
+                >
+                <a href="/blog" class="text-charcoal hover:text-sage transition"
+                    >Recursos</a
+                >
+                <a
+                    href="/contact"
+                    class="text-charcoal hover:text-sage transition">Contacto</a
+                >
+            </nav>
+
+            <!-- CTA -->
+            <div class="hidden md:block">
+                <Button variant="primary" size="sm" href="/contact">
+                    Agendar Sesión
+                </Button>
+            </div>
+        </div>
+    </Container>
+</header>

@@ -1,0 +1,111 @@
+---
+import Container from "@/components/ui/Container.astro";
+---
+
+<section class="bg-nude py-20 lg:py-24">
+    <Container>
+        <div class="space-y-12">
+            <!-- Header -->
+            <div
+                class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4"
+            >
+                <div>
+                    <h2
+                        class="text-3xl lg:text-4xl font-serif text-charcoal mb-2"
+                    >
+                        Áreas de Enfoque
+                    </h2>
+                    <p class="text-charcoal/60">
+                        Tres áreas principales de apoyo adaptadas a tu camino
+                        único. Nos enfocamos en fomentar la resiliencia basada
+                        en tus necesidades individuales.
+                    </p>
+                </div>
+                <a
+                    href="/services"
+                    class="text-sage hover:text-sage/80 transition-colors flex items-center gap-2 group"
+                >
+                    <span>Ver todas las especialidades</span>
+                    <svg
+                        class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Anxiety & Stress Card -->
+                <div class="bg-rose rounded-2xl p-8 space-y-4">
+                    <div
+                        class="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center"
+                    >
+                        <img
+                            src="/images/anxiety_icon.png"
+                            alt="Anxiety Icon"
+                            class="w-10 h-10"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-serif text-charcoal">
+                        Ansiedad y Estrés
+                    </h3>
+                    <p class="text-charcoal/70 leading-relaxed">
+                        Navega pensamientos y sentimientos abrumadores con
+                        estrategias basadas en evidencia que te ayudan a
+                        encontrar calma y claridad.
+                    </p>
+                </div>
+
+                <!-- Relationship Dynamics Card -->
+                <div class="bg-rose rounded-2xl p-8 space-y-4">
+                    <div
+                        class="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center"
+                    >
+                        <img
+                            src="/images/relationship_icon.png"
+                            alt="Relationship Icon"
+                            class="w-10 h-10"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-serif text-charcoal">
+                        Dinámicas de Relaciones
+                    </h3>
+                    <p class="text-charcoal/70 leading-relaxed">
+                        Construye conexiones más saludables a través de una
+                        mejor comunicación, establecimiento de límites y
+                        comprensión de patrones relacionales.
+                    </p>
+                </div>
+
+                <!-- Identity & Growth Card -->
+                <div class="bg-rose rounded-2xl p-8 space-y-4">
+                    <div
+                        class="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center"
+                    >
+                        <img
+                            src="/images/identity_icon.png"
+                            alt="Identity Icon"
+                            class="w-10 h-10"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-serif text-charcoal">
+                        Identidad y Crecimiento
+                    </h3>
+                    <p class="text-charcoal/70 leading-relaxed">
+                        Explora quién eres y quién quieres llegar a ser. Trabaja
+                        a través de transiciones y cultiva una comprensión más
+                        profunda de ti misma.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </Container>
+</section>
