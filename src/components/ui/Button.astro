@@ -1,9 +1,15 @@
 ---
+import type { HTMLAttributes } from 'astro/types';
+
 interface Props {
     variant?: "primary" | "secondary" | "outline";
     size?: "sm" | "md" | "lg";
     href?: string;
     class?: string;
+    target?: string;
+    rel?: string;
+    type?: "button" | "submit" | "reset";
+    [x: string]: any;
 }
 
 const {
@@ -11,6 +17,7 @@ const {
     size = "md",
     href,
     class: className = "",
+    ...rest
 } = Astro.props;
 
 const baseClasses =
@@ -35,11 +42,11 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} 
 
 {
     href ? (
-        <a href={href} class={classes}>
+        <a href={href} class={classes} {...(rest as HTMLAttributes<'a'>)}>
             <slot />
         </a>
     ) : (
-        <button class={classes}>
+        <button class={classes} {...(rest as HTMLAttributes<'button'>)}>
             <slot />
         </button>
     )

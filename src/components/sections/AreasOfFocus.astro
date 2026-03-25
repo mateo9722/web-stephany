@@ -2,110 +2,158 @@
 import Container from "@/components/ui/Container.astro";
 ---
 
-<section class="bg-nude py-20 lg:py-24">
+<section class="bg-white py-20 lg:py-24 overflow-hidden">
     <Container>
-        <div class="space-y-12">
+        <div class="space-y-14">
             <!-- Header -->
-            <div
-                class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4"
-            >
-                <div>
-                    <h2
-                        class="text-3xl lg:text-4xl font-serif text-charcoal mb-2"
-                    >
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+                <div class="reveal">
+                    <p class="text-sm uppercase tracking-wider text-sage font-medium mb-3">ESPECIALIDADES</p>
+                    <h2 class="text-3xl lg:text-4xl font-serif text-charcoal mb-2">
                         Áreas de Enfoque
                     </h2>
-                    <p class="text-charcoal/60">
-                        Tres áreas principales de apoyo adaptadas a tu camino
-                        único. Nos enfocamos en fomentar la resiliencia basada
-                        en tus necesidades individuales.
-                    </p>
+                    <div class="w-12 h-[2px] bg-sage"></div>
                 </div>
                 <a
                     href="/services"
-                    class="text-sage hover:text-sage/80 transition-colors flex items-center gap-2 group"
+                    class="text-sage hover:text-sage/80 transition-colors flex items-center gap-2 group reveal reveal-delay-1"
                 >
-                    <span>Ver todas las especialidades</span>
-                    <svg
-                        class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"></path>
+                    <span>Ver todos los servicios</span>
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </a>
             </div>
 
             <!-- Cards Grid -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Anxiety & Stress Card -->
-                <div class="bg-rose rounded-2xl p-8 space-y-4">
-                    <div
-                        class="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center"
-                    >
-                        <img
-                            src="/images/anxiety_icon.png"
-                            alt="Anxiety Icon"
-                            class="w-10 h-10"
-                        />
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Depresión y Ansiedad -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-1">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-sage/8 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-sage/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-sage/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Depresión y Ansiedad</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Acompañamiento terapéutico para comprender el origen del malestar, trabajar los síntomas emocionales y construir herramientas internas que permitan un mayor bienestar.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-serif text-charcoal">
-                        Ansiedad y Estrés
-                    </h3>
-                    <p class="text-charcoal/70 leading-relaxed">
-                        Navega pensamientos y sentimientos abrumadores con
-                        estrategias basadas en evidencia que te ayudan a
-                        encontrar calma y claridad.
-                    </p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sage to-sage/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
 
-                <!-- Relationship Dynamics Card -->
-                <div class="bg-rose rounded-2xl p-8 space-y-4">
-                    <div
-                        class="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center"
-                    >
-                        <img
-                            src="/images/relationship_icon.png"
-                            alt="Relationship Icon"
-                            class="w-10 h-10"
-                        />
+                <!-- Prevención del Suicidio -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-2">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-rose/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-rose/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-rose/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Prevención del Suicidio</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Espacio seguro para abordar pensamientos difíciles, contener el sufrimiento emocional y encontrar alternativas frente al dolor, priorizando el cuidado y la vida.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-serif text-charcoal">
-                        Dinámicas de Relaciones
-                    </h3>
-                    <p class="text-charcoal/70 leading-relaxed">
-                        Construye conexiones más saludables a través de una
-                        mejor comunicación, establecimiento de límites y
-                        comprensión de patrones relacionales.
-                    </p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-rose to-rose/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
 
-                <!-- Identity & Growth Card -->
-                <div class="bg-rose rounded-2xl p-8 space-y-4">
-                    <div
-                        class="w-16 h-16 bg-white/50 rounded-full flex items-center justify-center"
-                    >
-                        <img
-                            src="/images/identity_icon.png"
-                            alt="Identity Icon"
-                            class="w-10 h-10"
-                        />
+                <!-- Identidad y Autoconocimiento -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-3">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-sage/8 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-sage/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-sage/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Identidad y Autoconocimiento</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Exploración de quién eres, tus conflictos internos, cambios personales y procesos de construcción de identidad en distintas etapas de la vida.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-serif text-charcoal">
-                        Identidad y Crecimiento
-                    </h3>
-                    <p class="text-charcoal/70 leading-relaxed">
-                        Explora quién eres y quién quieres llegar a ser. Trabaja
-                        a través de transiciones y cultiva una comprensión más
-                        profunda de ti misma.
-                    </p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sage to-sage/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                </div>
+
+                <!-- Manejo del Estrés -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-4">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-rose/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-rose/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-rose/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Manejo del Estrés</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Identificación de factores estresantes y desarrollo de recursos emocionales para afrontarlos de manera más saludable y consciente.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-rose to-rose/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                </div>
+
+                <!-- Duelo -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-5">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-sage/8 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-sage/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-sage/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Duelo Individual y Familiar</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Acompañamiento en procesos de pérdida, facilitando la expresión emocional, la elaboración del dolor y la reconstrucción de sentido.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sage to-sage/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                </div>
+
+                <!-- Infancia: Juego y Dibujo -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-6">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-rose/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-rose/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-rose/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Infancia: Juego y Dibujo</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Trabajo terapéutico con niños a través del juego y el dibujo como medios de expresión emocional, favoreciendo la comunicación y comprensión de su mundo interno.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-rose to-rose/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                </div>
+
+                <!-- Maternidad -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-1">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-rose/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-rose/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-rose/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Maternidad</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Acompañamiento a mujeres en las distintas etapas de la maternidad, abordando cambios emocionales, dudas, exigencias internas, vínculos y la construcción del rol materno desde una mirada comprensiva y sin juicios.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-rose to-rose/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                </div>
+
+                <!-- Violencia de Género -->
+                <div class="focus-card group relative bg-gradient-to-br from-rose/30 to-nude rounded-3xl p-7 border border-black/5 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 reveal reveal-delay-2">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-sage/8 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-sage/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-sage/25 group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Violencia de Género</h3>
+                        <p class="text-charcoal/65 text-sm leading-relaxed">
+                            Acompañamiento psicológico en situaciones de violencia, brindando un espacio seguro para hablar, comprender lo vivido, fortalecer recursos personales y favorecer procesos de cuidado y toma de decisiones.
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sage to-sage/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
             </div>
         </div>
     </Container>
 </section>
+
+<style>
+    .focus-card {
+        backdrop-filter: blur(8px);
+    }
+</style>
