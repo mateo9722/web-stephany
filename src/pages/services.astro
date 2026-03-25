@@ -1,0 +1,768 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Container from "@/components/ui/Container.astro";
+import Button from "@/components/ui/Button.astro";
+---
+
+<BaseLayout title="Servicios - Psic. Stephany Pesantez">
+  <!-- Hero -->
+  <section class="bg-nude py-16 lg:py-24 overflow-hidden">
+    <Container>
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="space-y-6">
+          <p
+            class="text-sm uppercase tracking-wider text-sage font-medium reveal"
+          >
+            SERVICIOS PROFESIONALES
+          </p>
+          <h1
+            class="text-4xl lg:text-5xl font-serif text-charcoal leading-tight reveal reveal-delay-1"
+          >
+            Terapia que se adapta a tu historia.
+          </h1>
+          <p
+            class="text-lg text-charcoal/70 leading-relaxed reveal reveal-delay-2"
+          >
+            Mi trabajo es escucharte, comprenderte y acompañarte con
+            herramientas clínicas adaptadas a lo que necesitas en este momento
+            de tu vida.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 pt-2 reveal reveal-delay-3"
+          >
+            <Button
+              href="https://wa.me/593992798792"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="primary"
+            >
+              Agenda tu Primera Sesión
+            </Button>
+          </div>
+        </div>
+        <div
+          class="relative reveal reveal-right reveal-delay-2 hidden lg:block"
+        >
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src="/images/stephany_videocall.jpg"
+              alt="Psic. Stephany Pesantez en sesión virtual"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div
+            class="absolute -bottom-6 -left-6 w-32 h-32 bg-sage/15 rounded-full -z-10"
+          >
+          </div>
+          <div
+            class="absolute -top-6 -right-6 w-24 h-24 bg-rose/40 rounded-full -z-10"
+          >
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Enfoque Psicodinámico — Interactive Accordion -->
+  <section class="bg-white py-20 lg:py-24">
+    <Container>
+      <div class="max-w-5xl mx-auto">
+        <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+          <!-- Left: Intro -->
+          <div class="lg:col-span-2 space-y-5 reveal reveal-left">
+            <p class="text-sm uppercase tracking-wider text-sage font-medium">
+              MI ENFOQUE
+            </p>
+            <h2
+              class="text-3xl lg:text-4xl font-serif text-charcoal leading-tight"
+            >
+              Enfoque Psicodinámico
+            </h2>
+            <div class="w-12 h-[2px] bg-sage"></div>
+            <p class="text-charcoal/70 leading-relaxed">
+              Exploramos juntos los patrones inconscientes que moldean tu forma
+              de sentir, pensar y relacionarte, para que puedas construir una
+              vida más consciente.
+            </p>
+          </div>
+
+          <!-- Right: Accordion -->
+          <div
+            class="lg:col-span-3 space-y-4 reveal reveal-right reveal-delay-1"
+          >
+            <div
+              class="accordion-item border border-black/8 rounded-2xl overflow-hidden"
+              data-open="true"
+            >
+              <button
+                class="accordion-trigger w-full flex items-center justify-between p-6 text-left hover:bg-nude/30 transition-colors"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-sage/15 flex items-center justify-center shrink-0"
+                  >
+                    <svg
+                      class="w-5 h-5 text-sage"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      ><path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      ></path></svg
+                    >
+                  </div>
+                  <span class="font-semibold text-charcoal text-lg"
+                    >Exploración Profunda</span
+                  >
+                </div>
+                <svg
+                  class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"></path></svg
+                >
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-out"
+              >
+                <p class="px-6 pb-6 text-charcoal/70 leading-relaxed pl-20">
+                  Vamos más allá del síntoma para entender las raíces
+                  emocionales de lo que sientes. Comprender el porqué es el
+                  primer paso hacia el cambio.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item border border-black/8 rounded-2xl overflow-hidden"
+            >
+              <button
+                class="accordion-trigger w-full flex items-center justify-between p-6 text-left hover:bg-nude/30 transition-colors"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-rose/20 flex items-center justify-center shrink-0"
+                  >
+                    <svg
+                      class="w-5 h-5 text-rose"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      ><path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      ></path></svg
+                    >
+                  </div>
+                  <span class="font-semibold text-charcoal text-lg"
+                    >Vínculo Terapéutico</span
+                  >
+                </div>
+                <svg
+                  class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"></path></svg
+                >
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-out"
+                style="max-height: 0;"
+              >
+                <p class="px-6 pb-6 text-charcoal/70 leading-relaxed pl-20">
+                  La relación entre terapeuta y paciente es la herramienta
+                  principal de cambio. Un espacio de confianza donde puedes ser
+                  completamente tú.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item border border-black/8 rounded-2xl overflow-hidden"
+            >
+              <button
+                class="accordion-trigger w-full flex items-center justify-between p-6 text-left hover:bg-nude/30 transition-colors"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-sage/15 flex items-center justify-center shrink-0"
+                  >
+                    <svg
+                      class="w-5 h-5 text-sage"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      ><path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg
+                    >
+                  </div>
+                  <span class="font-semibold text-charcoal text-lg"
+                    >Cambio Duradero</span
+                  >
+                </div>
+                <svg
+                  class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"></path></svg
+                >
+              </button>
+              <div
+                class="accordion-content overflow-hidden transition-all duration-500 ease-out"
+                style="max-height: 0;"
+              >
+                <p class="px-6 pb-6 text-charcoal/70 leading-relaxed pl-20">
+                  No buscamos soluciones rápidas. Buscamos transformaciones
+                  profundas y sostenibles que te acompañen para toda la vida.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- ¿Con quién trabajo? — SVG Icons -->
+  <section class="bg-nude py-20 lg:py-24">
+    <Container>
+      <div class="text-center mb-16">
+        <p
+          class="text-sm uppercase tracking-wider text-sage font-medium mb-3 reveal"
+        >
+          POBLACIONES
+        </p>
+        <h2
+          class="text-3xl lg:text-4xl font-serif text-charcoal mb-4 reveal reveal-delay-1"
+        >
+          ¿Con quién trabajo?
+        </h2>
+        <div class="w-16 h-[2px] bg-sage mx-auto reveal reveal-delay-2"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Niños -->
+        <div
+          class="population-card relative bg-white rounded-3xl p-8 shadow-lg border border-black/5 text-center group hover:-translate-y-3 transition-all duration-500 reveal reveal-delay-1"
+        >
+          <div
+            class="w-20 h-20 bg-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rounded-full transition-all duration-500"
+          >
+            <svg
+              class="w-10 h-10 text-rose"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-serif text-charcoal mb-3">Niños y Niñas</h3>
+          <p class="text-charcoal/70 text-sm leading-relaxed">
+            Juego terapéutico, dibujo y expresión emocional adaptados al mundo
+            infantil.
+          </p>
+          <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose to-rose-light rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          >
+          </div>
+        </div>
+
+        <!-- Adolescentes -->
+        <div
+          class="population-card relative bg-white rounded-3xl p-8 shadow-lg border border-black/5 text-center group hover:-translate-y-3 transition-all duration-500 reveal reveal-delay-2"
+        >
+          <div
+            class="w-20 h-20 bg-sage/15 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rounded-full transition-all duration-500"
+          >
+            <svg
+              class="w-10 h-10 text-sage"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-serif text-charcoal mb-3">Adolescentes</h3>
+          <p class="text-charcoal/70 text-sm leading-relaxed">
+            Identidad, presión social, heridas emocionales y relaciones
+            saludables.
+          </p>
+          <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sage to-sage/40 rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          >
+          </div>
+        </div>
+
+        <!-- Adultos -->
+        <div
+          class="population-card relative bg-white rounded-3xl p-8 shadow-lg border border-black/5 text-center group hover:-translate-y-3 transition-all duration-500 sm:col-span-2 lg:col-span-1 sm:max-w-sm sm:mx-auto lg:max-w-none reveal reveal-delay-3"
+        >
+          <div
+            class="w-20 h-20 bg-nude/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rounded-full transition-all duration-500"
+          >
+            <svg
+              class="w-10 h-10 text-charcoal/60"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-serif text-charcoal mb-3">Adultos</h3>
+          <p class="text-charcoal/70 text-sm leading-relaxed">
+            Ansiedad, depresión, duelo, relaciones de pareja y crecimiento
+            personal.
+          </p>
+          <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-nude via-rose to-transparent rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          >
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Testimonios — Swiper Carousel -->
+  <section class="bg-white py-20 lg:py-28 overflow-hidden">
+    <Container>
+      <div class="text-center mb-14">
+        <p class="text-sm uppercase tracking-wider text-sage font-medium mb-3 reveal">
+          TESTIMONIOS
+        </p>
+        <h2 class="text-3xl lg:text-4xl font-serif text-charcoal mb-4 reveal reveal-delay-1">
+          Lo que dicen quienes han vivido el proceso
+        </h2>
+        <div class="w-16 h-[2px] bg-sage mx-auto reveal reveal-delay-2"></div>
+      </div>
+    </Container>
+
+    <div class="max-w-7xl mx-auto px-4 reveal reveal-delay-3">
+      <div class="swiper testimonials-swiper">
+        <div class="swiper-wrapper pb-12">
+
+          <!-- Testimonio 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-gradient-to-br from-nude/60 to-rose/20 backdrop-blur-sm border border-white/60 rounded-3xl p-8 md:p-10 shadow-lg h-full flex flex-col justify-between">
+              <div>
+                <svg class="w-10 h-10 text-sage/30 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-charcoal/80 text-lg md:text-xl leading-relaxed font-serif italic">
+                  "Llegué a terapia sintiéndome completamente desbordada. Poco a poco aprendí a entender lo que me pasaba y hoy me siento mucho más en calma."
+                </p>
+              </div>
+              <div class="mt-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sage/20 flex items-center justify-center text-sage font-bold text-sm">P.Z.</div>
+                <div class="h-[1px] flex-1 bg-sage/20"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-gradient-to-br from-rose/20 to-nude/60 backdrop-blur-sm border border-white/60 rounded-3xl p-8 md:p-10 shadow-lg h-full flex flex-col justify-between">
+              <div>
+                <svg class="w-10 h-10 text-rose/30 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-charcoal/80 text-lg md:text-xl leading-relaxed font-serif italic">
+                  "Al inicio me costaba hablar, pero encontré un espacio seguro donde pude expresarme sin sentirme juzgado."
+                </p>
+              </div>
+              <div class="mt-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-rose/20 flex items-center justify-center text-rose font-bold text-sm">S.R.</div>
+                <div class="h-[1px] flex-1 bg-rose/20"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-gradient-to-br from-sage/10 to-nude/50 backdrop-blur-sm border border-white/60 rounded-3xl p-8 md:p-10 shadow-lg h-full flex flex-col justify-between">
+              <div>
+                <svg class="w-10 h-10 text-sage/30 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-charcoal/80 text-lg md:text-xl leading-relaxed font-serif italic">
+                  "Aprendí a poner límites sin sentir culpa. Ha sido un proceso difícil pero muy valioso."
+                </p>
+              </div>
+              <div class="mt-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sage/20 flex items-center justify-center text-sage font-bold text-sm">R.T.</div>
+                <div class="h-[1px] flex-1 bg-sage/20"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-gradient-to-br from-nude/60 to-sage/15 backdrop-blur-sm border border-white/60 rounded-3xl p-8 md:p-10 shadow-lg h-full flex flex-col justify-between">
+              <div>
+                <svg class="w-10 h-10 text-sage/30 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-charcoal/80 text-lg md:text-xl leading-relaxed font-serif italic">
+                  "Su forma de acompañar es muy humana, sin juzgar, pero ayudándote a ver lo que necesitas trabajar."
+                </p>
+              </div>
+              <div class="mt-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-rose/20 flex items-center justify-center text-rose font-bold text-sm">A.S.</div>
+                <div class="h-[1px] flex-1 bg-rose/20"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 5 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-gradient-to-br from-rose/20 to-sage/10 backdrop-blur-sm border border-white/60 rounded-3xl p-8 md:p-10 shadow-lg h-full flex flex-col justify-between">
+              <div>
+                <svg class="w-10 h-10 text-rose/30 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="text-charcoal/80 text-lg md:text-xl leading-relaxed font-serif italic">
+                  "Desde la primera sesión sentí mucha confianza. Su forma de escuchar hizo que pudiera abrirme sin miedo."
+                </p>
+              </div>
+              <div class="mt-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sage/20 flex items-center justify-center text-sage font-bold text-sm">D.O.</div>
+                <div class="h-[1px] flex-1 bg-sage/20"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination !relative !bottom-0 mt-8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modalidad -->
+  <section class="bg-nude py-20 lg:py-24">
+    <Container>
+      <div class="text-center mb-16">
+        <p
+          class="text-sm uppercase tracking-wider text-sage font-medium mb-3 reveal"
+        >
+          MODALIDAD
+        </p>
+        <h2
+          class="text-3xl lg:text-4xl font-serif text-charcoal mb-4 reveal reveal-delay-1"
+        >
+          ¿Cómo trabajamos?
+        </h2>
+        <div class="w-16 h-[2px] bg-sage mx-auto reveal reveal-delay-2"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div
+          class="modality-card relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-black/5 overflow-hidden group reveal reveal-left"
+        >
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-sage/8 rounded-full -translate-y-1/2 translate-x-1/2"
+          >
+          </div>
+          <div class="relative z-10">
+            <div
+              class="w-14 h-14 bg-sage/15 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg
+                class="w-7 h-7 text-sage"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                ></path></svg
+              >
+            </div>
+            <h3 class="text-2xl font-serif text-charcoal mb-3">
+              Terapia Online
+            </h3>
+            <p class="text-charcoal/70 leading-relaxed text-sm mb-5">
+              Sesiones por videollamada desde la comodidad de tu hogar. Ideal
+              para quienes buscan flexibilidad.
+            </p>
+            <ul class="space-y-2 text-sm text-charcoal/60">
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-sage shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >Desde cualquier lugar
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-sage shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >Horarios flexibles
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-sage shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >Plataforma segura
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="modality-card relative bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-black/5 overflow-hidden group reveal reveal-right"
+        >
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-rose/15 rounded-full -translate-y-1/2 translate-x-1/2"
+          >
+          </div>
+          <div class="relative z-10">
+            <div
+              class="w-14 h-14 bg-rose/15 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300"
+            >
+              <svg
+                class="w-7 h-7 text-rose"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                ></path></svg
+              >
+            </div>
+            <h3 class="text-2xl font-serif text-charcoal mb-3">
+              Terapia Presencial
+            </h3>
+            <p class="text-charcoal/70 leading-relaxed text-sm mb-5">
+              Atención en consultorio privado para una conexión más profunda en
+              un ambiente acogedor.
+            </p>
+            <ul class="space-y-2 text-sm text-charcoal/60">
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-sage shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >Consultorio privado
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-sage shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >Ambiente seguro
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-sage shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >Conexión cara a cara
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-rose py-20 lg:py-24 relative">
+    <Container>
+      <div
+        class="bg-white/60 backdrop-blur-md border border-white/50 rounded-3xl p-8 md:p-14 shadow-soft max-w-4xl mx-auto text-center"
+      >
+        <h2 class="text-3xl lg:text-4xl font-serif text-charcoal mb-4 reveal">
+          El primer paso es el más importante.
+        </h2>
+        <div class="w-16 h-[2px] bg-sage mx-auto mb-6 reveal reveal-delay-1">
+        </div>
+        <p
+          class="text-center text-charcoal/80 max-w-2xl mx-auto mb-10 text-lg leading-relaxed reveal reveal-delay-2"
+        >
+          No necesitas tener todo claro. Solo necesitas querer estar mejor.
+        </p>
+        <div class="reveal reveal-delay-3">
+          <Button
+            href="https://wa.me/593992798792"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="primary"
+            size="lg"
+          >
+            Escríbeme por WhatsApp
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>
+
+<style>
+  .accordion-content {
+    max-height: 200px;
+    transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .accordion-item:not([data-open="true"]) .accordion-content {
+    max-height: 0;
+  }
+  .accordion-item[data-open="true"] .accordion-icon {
+    transform: rotate(180deg);
+  }
+  .accordion-item[data-open="true"] {
+    background-color: rgba(228, 201, 182, 0.15);
+  }
+</style>
+
+<script>
+  document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const item = trigger.closest(".accordion-item");
+      const content = item?.querySelector(".accordion-content") as HTMLElement;
+      const isOpen = item?.getAttribute("data-open") === "true";
+
+      // Close all
+      document.querySelectorAll(".accordion-item").forEach((i) => {
+        i.setAttribute("data-open", "false");
+        const c = i.querySelector(".accordion-content") as HTMLElement;
+        if (c) c.style.maxHeight = "0";
+      });
+
+      // Toggle current
+      if (!isOpen && item && content) {
+        item.setAttribute("data-open", "true");
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
+  // Open first by default
+  const firstItem = document.querySelector('.accordion-item[data-open="true"]');
+  const firstContent = firstItem?.querySelector(
+    ".accordion-content",
+  ) as HTMLElement;
+  if (firstContent)
+    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+</script>
+
+<script>
+  import Swiper from 'swiper';
+  import { Autoplay, Pagination } from 'swiper/modules';
+  import 'swiper/css';
+  import 'swiper/css/pagination';
+
+  new Swiper('.testimonials-swiper', {
+    modules: [Autoplay, Pagination],
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+    },
+  });
+</script>
+
+<style is:global>
+  .testimonials-swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #b5c4b1;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  .testimonials-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #8a9e82;
+    width: 28px;
+    border-radius: 5px;
+  }
+</style>

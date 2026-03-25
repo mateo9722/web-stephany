@@ -3,26 +3,26 @@ import Container from "@/components/ui/Container.astro";
 import Button from "@/components/ui/Button.astro";
 ---
 
-<section class="bg-nude py-20 lg:py-32">
+<section class="bg-nude py-12 lg:py-16">
     <Container>
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <!-- Left Content -->
             <div class="space-y-6">
-                <p class="text-sm uppercase tracking-wider text-charcoal/60">
+                <p class="text-sm uppercase tracking-wider text-charcoal/60 reveal">
                     FUNDAMENTADA EN LA COMPASIÓN
                 </p>
                 <h1
-                    class="text-5xl lg:text-6xl font-serif text-charcoal leading-tight"
+                    class="text-5xl lg:text-6xl font-serif text-charcoal leading-tight reveal reveal-delay-1"
                 >
                     Encuentra tu equilibrio en un mundo cambiante.
                 </h1>
-                <p class="text-lg text-charcoal/70 leading-relaxed">
+                <p class="text-lg text-charcoal/70 leading-relaxed reveal reveal-delay-2">
                     Un espacio seguro centrado en la calidez, claridad y
                     conexión humana. Navegamos juntos las complejidades de la
                     vida.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <Button href="/contact" variant="primary">
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 reveal reveal-delay-3">
+                    <Button href="https://wa.me/593992798792" target="_blank" rel="noopener noreferrer" variant="primary">
                         Comienza Tu Camino
                     </Button>
                     <Button href="/about" variant="outline">
@@ -32,46 +32,13 @@ import Button from "@/components/ui/Button.astro";
             </div>
 
             <!-- Right Content - Image with Card -->
-            <div class="relative">
+            <div class="relative reveal reveal-right reveal-delay-2">
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                     <img
                         src="/images/stephany_professional.png"
                         alt="Psicóloga Stephany Pesantez"
                         class="w-full h-auto object-cover"
                     />
-                </div>
-
-                <!-- Floating Card -->
-                <div
-                    class="absolute bottom-8 left-8 bg-white rounded-xl shadow-lg p-6 max-w-xs"
-                >
-                    <div class="flex items-start gap-4">
-                        <div
-                            class="w-12 h-12 bg-sage/10 rounded-full flex items-center justify-center flex-shrink-0"
-                        >
-                            <svg
-                                class="w-6 h-6 text-sage"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                ></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-charcoal mb-1">
-                                Consultas en Línea
-                            </h3>
-                            <p class="text-sm text-charcoal/60">
-                                Sesiones seguras por video desde cualquier lugar
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
